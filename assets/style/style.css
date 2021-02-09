@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(../fonts/SourceSansPro-Light.ttf);
+}
 
 * {
   margin: 0;
@@ -27,8 +30,7 @@ p {
   margin: 25px 0;
   font-size: 1.25rem;
 }
-.button,
-input[type="submit"] {
+.button {
   border: 1px solid #ccc;
   background: transparent;
   border-radius: 50px;
@@ -41,7 +43,6 @@ input[type="submit"] {
   transition: 0.3s;
 }
 .button:hover,
-input[type="submit"]:hover,
 footer a:hover {
   border: 1px solid skyblue;
   color: skyblue;
@@ -52,6 +53,7 @@ footer a:hover {
   align-items: center;
   padding: 55px;
 }
+
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -134,7 +136,7 @@ textarea {
   height: 180px;
 }
 
-/************************** FOOTER ***************************/
+/*********************** FOOTER ************************/
 footer {
   padding: 70px 0 90px;
   position: relative;
@@ -144,7 +146,7 @@ footer:before {
   position: absolute;
   width: 90%;
   height: 1px;
-  background: #ccc;
+  background: rgba(0, 0, 0, 0.082);
   top: 0px;
   left: 50%;
   transform: translateX(-50%);
@@ -159,7 +161,6 @@ footer ul {
 footer a {
   border: 1px solid #ccc;
   border-radius: 50px;
-  display: inline-block;
   width: 44px;
   height: 44px;
   display: flex;
